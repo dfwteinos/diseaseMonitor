@@ -1,0 +1,8 @@
+sarscov-2 6
+evd 10
+h1n1 12
+sars-1 20
+flu-2018 13
+covid-2019 11
+mers-cov 27
+unable to read again a command.

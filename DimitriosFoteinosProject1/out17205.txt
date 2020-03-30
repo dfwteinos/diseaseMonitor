@@ -1,0 +1,3 @@
+for disease: [mers-cov] we have tottally: [3] outbreaks.
+for disease: [sars-1] we have tottally: [2] outbreaks.
+unable to read again a command.

@@ -1,0 +1,2 @@
+sorry,there is already one exit date there or the entry date is greater than the exit date.
+unable to read again a command.

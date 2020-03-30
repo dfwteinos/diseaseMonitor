@@ -1,0 +1,2 @@
+for disease: [evd] , we have totally: [ 10 ] number of diseases.
+unable to read again a command.
