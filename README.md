@@ -21,10 +21,6 @@ And then, to run the 1st .cmd for example with pipe:
 
 ``` ./diseaseMonitor -p patientRecordsFile –h1 diseaseHashtableNumOfEntries –h2 countryHashtableNumOfEntries –b bucketSize < 0_input_command_RND10244096.cmd ```
 
-### Compile and Run particular commands
-
-Please, for further informations check page 2 of hw1-spring-2020.pdf
-
 ### Clean 
 
 While being in project directory, delete all objects files and executable by typing:
