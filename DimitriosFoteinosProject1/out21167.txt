@@ -1,0 +1,5 @@
+covid-2019 11
+mers-cov 2
+sars-1 20
+flu-2018 3
+unable to read again a command.

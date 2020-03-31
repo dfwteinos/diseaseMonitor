@@ -74,7 +74,9 @@ void BucketInsert(BigBucket* bucket,char* type,int bucketNumber, HashBitMap* Bit
 
     bool existing=false;
     BigBucket currentCollision;
-
+    
+    BigBucket previousCollision=NULL;
+    
     if (*bucket!=NULL){
         if ( (*bucket)[bucketSize-1]!=NULL ){
             
@@ -97,6 +99,8 @@ void BucketInsert(BigBucket* bucket,char* type,int bucketNumber, HashBitMap* Bit
 
                     for(int i=0; i<bucketSize; i++){
             
+                        //previousCollision[i]=currentCollision[i];
+
                         if (currentCollision[i]!=NULL){
                             if ( strcmp( currentCollision[i]->item ,item)==0) {
                     
@@ -108,7 +112,12 @@ void BucketInsert(BigBucket* bucket,char* type,int bucketNumber, HashBitMap* Bit
 
                     if (existing==true) break;
 
-                    if( currentCollision[bucketSize-1]!=NULL) currentCollision=currentCollision[bucketSize-1]->collision;
+                    if( currentCollision[bucketSize-1]!=NULL) {
+
+                        previousCollision=currentCollision;
+                        currentCollision=currentCollision[bucketSize-1]->collision;
+
+                    }
 
                     else break;
                     
@@ -125,7 +134,15 @@ void BucketInsert(BigBucket* bucket,char* type,int bucketNumber, HashBitMap* Bit
 
             if(currentCollision==NULL && existing==false){
 
-                BucketCreate( (&(*bucket)[bucketSize-1]->collision) , bucketSize);
+                if( bucketSize==1 && previousCollision!=NULL ){
+                
+                    BucketCreate(  &(previousCollision[bucketSize-1]->collision),bucketSize );
+
+                }
+
+                else BucketCreate( (&(*bucket)[bucketSize-1]->collision) , bucketSize);
+                //BucketCreate( (&currentCollision),bucketSize );
+
             }
         
         }
