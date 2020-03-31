@@ -35,4 +35,6 @@ While being in project directory, delete all objects files and executable by typ
 
 Please, for further informations,formats for commands, etc. check page 2 of hw1-spring-2020.pdf
 
+There is also a README in greek and an explanation of this project in greek also.
+
 *This project is part of the course: System Programming , Spring of 2020. University of Athens, DiT.*
