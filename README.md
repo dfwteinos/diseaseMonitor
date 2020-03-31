@@ -15,7 +15,7 @@ Tip: For bucketSize, the formula is: bucketSize=(bucketSize/24). So we need >24.
 
 If you want to run particular commands,you have only to do:
 
-1) ```make```
+```make```
 
 And then, to run the 1st .cmd for example with pipe: 
 
